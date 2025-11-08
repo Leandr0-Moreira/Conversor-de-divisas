@@ -1,4 +1,6 @@
+# ========================
 # Logs
+# ========================
 logs
 *.log
 npm-debug.log*
@@ -7,30 +9,63 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
+# ========================
+# Dependencias y builds
+# ========================
+node_modules/
+dist/
+dist-ssr/
+coverage/
 *.local
 
-# Editor directories and files
+# ========================
+# Archivos del sistema
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Archivos de editor
+# ========================
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
 *.tsbuildinfo
-
 .eslintcache
 
+# ========================
 # Cypress
+# ========================
 /cypress/videos/
 /cypress/screenshots/
 
+# ========================
 # Vitest
+# ========================
 __screenshots__/
+
+# ========================
+# Visual Studio / .NET
+# ========================
+*.user
+*.rsuser
+*.sln.docstates
+*.esproj
+*.esproj.user
+obj/
+bin/
+Debug/
+Release/
+.vs/
+
+# ========================
+# Archivos de entorno
+# ========================
+.env
+.env.local
+.env.*.local
